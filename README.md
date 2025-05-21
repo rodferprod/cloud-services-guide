@@ -1,13 +1,9 @@
 # Criando e Configurando uma Máquina Virtual no Microsoft Azure
 
----
-
 ## 1. Acesso ao Azure Portal
 
 1. [Azure Portal](https://portal.azure.com/).
 2. Faça login com sua conta Microsoft.
-
----
 
 ## 2. Criando uma Máquina Virtual
 
@@ -30,9 +26,7 @@ Preencha os campos obrigatórios:
 - **Tipo de autenticação**: Par de chaves SSH (Linux) ou senha (Windows).
 - Configure os dados de login.
 
----
-
-## ☁️ 3. Alta Disponibilidade e Escalabilidade
+## 3. Alta Disponibilidade e Escalabilidade
 
 ### a) Zona de disponibilidade
 
@@ -50,8 +44,6 @@ Após criar a VM:
 1. Vá em **“Conjuntos de dimensionamento de máquinas virtuais”** para criar um conjunto de VMs idênticas com **escalabilidade automática**.
 2. Configure regras de escalonamento com base em CPU, memória, etc.
 
----
-
 ## 4. Confiabilidade e Previsibilidade
 
 ### a) Tipo de disco
@@ -65,8 +57,6 @@ Após criar a VM:
 ### c) Monitoramento com Azure Monitor
 
 - Ative o **Azure Monitor** e **Log Analytics** para métricas de desempenho, logs e alertas preditivos.
-
----
 
 ## 5. Segurança e Governança
 
@@ -88,8 +78,6 @@ Após criar a VM:
 
 - Permite que a VM acesse recursos do Azure (como Key Vault, Storage, etc.) sem armazenar credenciais no código.
 
----
-
 ## 6. Capacidade de Gerenciamento
 
 ### a) Tags (Etiquetas)
@@ -109,17 +97,13 @@ Após criar a VM:
 
 - Instale agentes (como o **Azure Diagnostics Agent** ou **Custom Script Extension**) para automatizar tarefas de configuração e coleta de dados.
 
----
-
 ## 7. Finalizar a Criação
 
 1. Revise as configurações na aba **“Revisar + criar”**.
 2. Clique em **“Criar”**.
 3. Aguarde a implantação.
 
----
-
-## ✅ Resumo: Pilares Atendidos
+## Resumo: Pilares Atendidos
 
 | **Pilar**                    | **Recursos Utilizados no Azure**                                  |
 |-----------------------------|---------------------------------------------------------------------|
@@ -129,4 +113,3 @@ Após criar a VM:
 | **Segurança e Governança**   | NSG, Defender, Azure Policy, Managed Identity                     |
 | **Gerenciamento**            | Tags, Backup, Update Management, Extensões, Azure Automation      |
 
----
