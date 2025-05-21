@@ -17,7 +17,7 @@ Preencha os campos obrigatórios:
 
 - **Assinatura e grupo de recursos**: Escolha ou crie um novo.
 - **Nome da VM**: Ex: `vm-prod-app01`
-- **Região**: Escolha uma próxima ao seu público (ex: "Brazil South").
+- **Região**: Escolha uma máquina fora do Brasil para melhores custos
 - **Imagem**: Escolha o SO (ex: Ubuntu, Windows Server, etc.).
 - **Tamanho**: Escolha um SKU de acordo com a carga esperada (ex: `Standard_DS2_v2`).
 
@@ -54,10 +54,6 @@ Após criar a VM:
 
 - Use **VMs reservadas** (1 ou 3 anos) para workloads previsíveis e reduzir custos.
 
-### c) Monitoramento com Azure Monitor
-
-- Ative o **Azure Monitor** e **Log Analytics** para métricas de desempenho, logs e alertas preditivos.
-
 ## 5. Segurança e Governança
 
 ### a) Grupo de Segurança de Rede (NSG)
@@ -72,11 +68,7 @@ Após criar a VM:
 ### c) Políticas de governança com Azure Policy
 
 - Aplique políticas para exigir configurações seguras (ex: criptografia obrigatória, tipo de VM permitido).
-- Ex: Bloquear criação de VMs fora da região "Brazil South".
-
-### d) Identidade Gerenciada (Managed Identity)
-
-- Permite que a VM acesse recursos do Azure (como Key Vault, Storage, etc.) sem armazenar credenciais no código.
+- Ex: Bloquear criação de VMs dentro da região "Brazil South", evitando maiores custos.
 
 ## 6. Capacidade de Gerenciamento
 
